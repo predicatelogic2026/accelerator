@@ -10,7 +10,7 @@ Run with "./ps_only_synthetic X Y", where X is the number of threads (1~4), and 
 
 Use "gcc -O3 -g -o ps_only_benchmark ps_only_benchmark.c -fopenmp" to compile.
 
-Run with "./ps_only_benchmark X Y Z", where X is the number of threads (1~4), Y is the name of the predicate file, Z is the name of the rule file. 
+Run with "./ps_only_benchmark X Y Z", where X is the number of threads (1~4), Y is the name of the predicate file, and Z is the name of the rule file. 
 
 - choose from one of the rule files: rules_lubm.txt or rules_oubm.txt
   
@@ -22,8 +22,14 @@ Run with "./ps_only_benchmark X Y Z", where X is the number of threads (1~4), Y 
 
 Use "gcc -O3 -g -o ps_synthetic ps_synthetic.c" to compile.
 
-Run with "./ps_synthetic X Y
+Run with "./ps_synthetic X Y", where X is the number of PL workers (1~32), and Y is the number of constants (25~75). 
 
 (2) ps_benchmark.c: taking benchmark input instances
+
+Use "gcc -O3 -g -o ps_benchmark ps_benchmark.c" to compile.
+
+Run with "./ps_benchmark X Y Z", where X is the number of PL workers (1~32), Y is the name of the predicate file, and Z is the name of the rule file. (See available predicate and rule file names in item 1.)
+
+Please note that, all provided rule files and predicate files are created from the original dataset from LUBM benchmark (https://swat.cse.lehigh.edu/projects/lubm/) and UOBM benchmark (https://www.cs.ox.ac.uk/isg/tools/UOBMGenerator/.)
 
 3. Vivado FPGA project for the PS+PL approach: FPGA_project_ver1.zip
