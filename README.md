@@ -30,6 +30,6 @@ Use "gcc -O3 -g -o ps_benchmark ps_benchmark.c" to compile.
 
 Run with "./ps_benchmark X Y Z", where X is the number of PL workers (between 1 and 32), Y is the name of the predicate file, and Z is the name of the rule file. (See available predicate and rule file names in item 1.)
 
-Please note that, all provided rule files and predicate files are created from the original dataset from LUBM benchmark (https://swat.cse.lehigh.edu/projects/lubm/) and UOBM benchmark (https://www.cs.ox.ac.uk/isg/tools/UOBMGenerator/.)
+Please note that, all benchmark rule files and predicate files are created from the original dataset from LUBM benchmark (https://swat.cse.lehigh.edu/projects/lubm/) and UOBM benchmark (https://www.cs.ox.ac.uk/isg/tools/UOBMGenerator/.)
 
 3. Vivado FPGA project for the PS+PL approach: FPGA_project_ver1.zip
