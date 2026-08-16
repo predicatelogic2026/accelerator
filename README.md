@@ -2,6 +2,10 @@
 
 (1) ps_only_synthetic.c: taking synthetic input instances
 
+Use "gcc -O3 -g -o ps_only_synthetic ps_only_synthetic.c -fopenmp" to compile.
+
+Run with "./ps_only_synthetic
+
 (2) ps_only_benchmark.c: taking benchmark input instances:
 
 - rules: rules_lubm.txt or rules_oubm.txt
